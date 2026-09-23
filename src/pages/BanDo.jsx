@@ -254,10 +254,10 @@ function BanDo() {
 
       <section className="map-hero">
         <p className="map-eyebrow">Bản đồ tương tác</p>
-        <h1>Bản đồ Việt Nam 34 tỉnh, thành phố và 13 đặc khu</h1>
+        <h1>Bản đồ Việt Nam 34 tỉnh, thành phố</h1>
         <p>
-          Click trực tiếp vào tỉnh/thành hoặc đặc khu để mở thông tin tương ứng,
-          đồng thời đọc nhanh các thông tin vùng do admin quản lý. Đặc khu Hoàng Sa và Đặc khu
+          Click trực tiếp vào tỉnh/thành để mở thông tin tương ứng,
+          đồng thời đọc nhanh các thông tin vùng do admin quản lý. Quần đảo Hoàng Sa và quần đảo
           Trường Sa được hiển thị theo dữ liệu đường bờ và rạn san hô thực tế.
         </p>
       </section>
@@ -279,8 +279,8 @@ function BanDo() {
         <div className="map-canvas-card">
           <div className="map-card-header">
             <div>
-              <h2>Bản đồ hành chính 34 tỉnh/thành và 13 đặc khu</h2>
-              <p>Chọn trực tiếp trên bản đồ hoặc tìm nhanh theo tên tỉnh/thành, đặc khu, tên vùng.</p>
+              <h2>Bản đồ hành chính 34 tỉnh/thành Việt Nam</h2>
+              <p>Chọn trực tiếp trên bản đồ hoặc tìm nhanh theo tên tỉnh/thành, tên vùng.</p>
             </div>
 
             <form className="map-search-form" onSubmit={handleSearchSubmit}>
@@ -289,7 +289,7 @@ function BanDo() {
                 list="map-search-options"
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
-                placeholder="Ví dụ: Hà Nội, Đặc khu Hoàng Sa, Đồng bằng sông Hồng..."
+                placeholder="Ví dụ: Hà Nội, Quần đảo Hoàng Sa, Đồng bằng sông Hồng..."
               />
               <button type="submit">Tìm nhanh</button>
               <datalist id="map-search-options">
@@ -389,7 +389,7 @@ function BanDo() {
               </>
             ) : selectedProvinceMeta?.type === "special-zone" ? (
               <>
-                <div className="map-region-badge">Đặc khu</div>
+                <div className="map-region-badge">Quần đảo</div>
                 <p className="map-detail-description">
                   {selectedProvinceMeta.description}
                 </p>
