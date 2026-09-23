@@ -57,7 +57,7 @@ export const VIETNAM_SPECIAL_ZONES = [
     aliases: ["Trường Sa", "Quần đảo Trường Sa", "Huyện đảo Trường Sa"],
     description: "Đơn vị hành chính trên biển trực thuộc tỉnh Khánh Hòa.",
     mapKey: "vn-truong-sa",
-    name: "Quần đỏa Trường Sa",
+    name: "Quần đảo Trường Sa",
     slug: "quan-dao-truong-sa",
     type: "special-zone",
   },
